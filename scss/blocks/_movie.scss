@@ -1,0 +1,52 @@
+.movie {
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7);
+}
+
+.movie__card {
+  padding: 8px;
+  background-color: #fff;
+}
+
+.movie__poster-wrapper {
+  height: 200px;
+}
+
+.movie__poster {
+  display: block;
+  height: 100%;
+  margin-bottom: 12px;
+  object-fit: cover;  
+}
+
+.movie__title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: $color-primary;
+}
+
+.movie__year {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.movie__type {
+  margin: 0;
+  color: $color-blue;
+}
+
+
+@include breakpoint-down(655px) {
+
+  .movie__title {
+    font-size: 14px;
+  }
+
+  .movie__year {
+    font-size: 14px;
+  }
+
+  .movie__type {
+    font-size: 14px;
+  }
+
+}

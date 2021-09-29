@@ -4,10 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>58</title>
+  <title>films</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <span class="site-header__title">Films</span>
+      <form class="site-header__search-form js-search-form" action="https://www.omdbapi.com/?&apikey=c46b8ec4" method="get">
+        <input class="site-header__search-input js-search-input" type="text" name="movie" aria-label="Search movie" placeholder="Movie name" required>
+        <button class="site-header__search-submit js-search-button" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="movies">
+      <h1 class="visually-hidden">Top films 2021</h1>
+      <div class="movies__container container">
+        <ul class="movies__list">
+          
+        </ul>
+      </div>
+    </section>
+  </main>
 
 
+  <template id="movie-template">
+    <li class="movies__item movie">
+      <div class="movie__card">
+        <div class="movie__poster-wrapper">
+          <img class="movie__poster" src="//unsplash.it/250/200" alt="img" width="280" height="200">
+        </div>
+        <div class="movie__body">
+          <h2 class="movie__title">Lorem, ipsum.</h2>
+          <time class="movie__year" datetime="2018">2018</time>
+          <p class="movie__type">Series</p>
+        </div>
+      </div>
+    </li>
+  </template>
+<script src="js/main.js"></script>
 </body>
 </html>

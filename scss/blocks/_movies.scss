@@ -1,0 +1,61 @@
+.movies {
+  padding-top: 40px;
+}
+
+.movies__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-right: -14px;
+  margin-bottom: -12px;
+  padding: 0;
+  list-style: none;
+}
+
+.movies__item {
+  width: calc(100% / 4 - 14px);
+  margin-right: 14px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+@include breakpoint-down(932px) {
+
+  .movies__list {
+    margin-right: -18px;
+  }
+
+  .movies__item {
+    width: calc(100% / 3 - 18px);
+    margin-right: 18px;
+  }
+
+}
+
+@include breakpoint-down(655px) {
+
+  .movies__list {
+    margin-right: -18px;
+  }
+
+  .movies__item {
+    width: calc(100% / 2 - 18px);
+    margin-right: 18px;
+  }
+
+}
+
+@include breakpoint-down(310px) {
+
+  .movies__list {
+    margin: 0;
+  }
+
+  .movies__item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+}
