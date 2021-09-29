@@ -7,7 +7,7 @@ const elMovieSearchInput = elMovieSearchForm.querySelector('.js-search-input')
 const elMovieSearchButton = elMovieSearchForm.querySelector('.js-search-button')
 
 function getFetch (title) {
-  fetch(`http://www.omdbapi.com/?s=${title}&apikey=c46b8ec4`)
+  fetch(`https://omdbapi.com/?s=${title}&apikey=c46b8ec4`)
   .then(response => response.json())
   .then(data => {
     if (data.Response === 'True') {
